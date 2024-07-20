@@ -1,0 +1,9 @@
+getgenv().Toggle = false
+while “getgenv().Toggle” do
+wait()
+local args = {
+    [1] = "Bingus"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end
